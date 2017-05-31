@@ -1,0 +1,95 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2015 Qualcomm Technologies International, Ltd.                                      ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.csr.gaiacontrol.activities.MainActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tb_menu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tb_menu"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/ll_lights_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_container_tiles">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/bt_led"
+                    android:background="@color/background_led_disabled"
+                    style="@style/AppTheme.Tile.Default"
+                    android:drawableTop="@drawable/ic_led_on"
+                    android:layout_width="@dimen/no_layout_width"
+                    android:layout_height="@dimen/height_tile"
+                    android:layout_weight="1"
+                    android:text="@string/button_led"
+                    android:enabled="true" />
+
+                <include
+                    layout="@layout/tile_information"
+                    android:id="@+id/bt_device_information"
+                    android:layout_weight="2"
+                    android:layout_height="@dimen/height_tile"
+                    android:layout_width="@dimen/no_layout_width"
+                    style="@style/AppTheme.Tile.Info" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_equalizer"
+                android:background="@drawable/tile_equalizer"
+                style="@style/AppTheme.Tile.Default"
+                android:drawableStart="@drawable/ic_equalizer"
+                android:text="@string/button_equalizer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_tile" />
+
+
+            <Button
+                android:id="@+id/bt_tws"
+                android:background="@drawable/tile_tws"
+                style="@style/AppTheme.Tile.Default"
+                android:drawableStart="@drawable/ic_speaker"
+                android:text="@string/button_tws"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="match_parent" />
+
+            <Button
+                android:id="@+id/bt_remote"
+                android:background="@drawable/tile_remote"
+                style="@style/AppTheme.Tile.Default"
+                android:drawableStart="@drawable/ic_remote"
+                android:text="@string/button_remote"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="match_parent" />
+
+
+            <Button
+                android:id="@+id/bt_update"
+                android:background="@drawable/tile_update"
+                style="@style/AppTheme.Tile.Default"
+                android:drawableStart="@drawable/ic_update"
+                android:text="@string/button_update"
+                android:layout_height="@dimen/height_tile"
+                android:layout_width="match_parent" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
