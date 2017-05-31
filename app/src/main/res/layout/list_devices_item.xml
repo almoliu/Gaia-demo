@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2015 Qualcomm Technologies International, Ltd.                                      ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_list_item"
+    android:layout_marginBottom="@dimen/margin_list_item"
+    android:minHeight="@dimen/height_item"
+    android:paddingBottom="@dimen/padding_list_item_vertical"
+    android:paddingStart="@dimen/padding_list_item_horizontal"
+    android:paddingEnd="@dimen/no_padding"
+    android:paddingTop="@dimen/padding_list_item_vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/iv_item_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/empty_content_description"
+        android:layout_marginStart="@dimen/padding_list_item_horizontal"
+        android:layout_marginEnd="@dimen/padding_list_item_vertical"
+        android:src="@drawable/ic_tick"
+        android:visibility="invisible"
+        android:tint="@color/colorAccent" />
+
+    <!-- Name of device -->
+    <TextView
+        android:id="@+id/tv_device_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@id/iv_item_selected"
+        android:layout_toStartOf="@id/iv_item_selected"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:lines="1"
+        android:textColor="@color/device_item_name"
+        android:textSize="@dimen/text_size_item_title" />
+
+    <!-- MAC address of the device -->
+    <TextView
+        android:id="@+id/tv_device_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_device_name"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/iv_item_selected"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:lines="1"
+        android:textColor="@color/device_item_address"
+        android:textSize="@dimen/text_size_item_body" />
+
+</RelativeLayout>

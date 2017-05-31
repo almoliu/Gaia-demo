@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ Copyright 2015 Qualcomm Technologies International, Ltd.                                      ~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--suppress CheckTagEmptyBody -->
+<resources>
+
+    <string name="app_name">GAIA Control</string>
+
+    <!-- CONNECTION VIEW -->
+    <string name="select_device">Bluetooth paired devices</string>
+    <string name="start">START</string>
+    <string name="empty_content_description"></string>
+    <string name="connect_no_available_device">Activate the Bluetooth and pair GAIA Bluetooth devices - by using Android settings - to be able to select a device here.</string>
+
+    <!-- MAIN VIEW -->
+    <string name="button_equalizer">Equalizer</string>
+    <string name="button_led">LED</string>
+    <string name="button_tws">TWS</string>
+    <string name="button_update">Update</string>
+    <string name="button_remote">Remote control</string>
+    <string name="action_change_device">Change device</string>
+
+    <!-- ACTIVITY NAMES -->
+    <string name="activity_custom_equalizer">Customize bank 1</string>
+    <string name="activity_equalizer">Equalizer</string>
+    <string name="activity_update">Update</string>
+    <string name="activity_device_information">Device information</string>
+    <string name="activity_tws">TWS</string>
+    <string name="activity_remote_control">Remote Control</string>
+
+
+    <!-- DEVICE INFORMATION VIEW -->
+    <string name="info_name">Device name</string>
+    <string name="info_bluetooth_address">Bluetooth address</string>
+    <string name="info_rssi_signal">RSSI signal</string>
+    <string name="info_battery_level">Battery level</string>
+    <string name="info_battery_status">Battery status</string>
+    <string name="info_battery_status_in_charge">Charging</string>
+    <string name="info_battery_status_no_charge">Not charging</string>
+    <string name="info_api_version">API version</string>
+    <string name="info_no_title"></string>
+    <string name="info_not_supported">not supported</string>
+
+    <!-- EQUALIZER VIEW -->
+    <string name="switch_bass">Bass boost</string>
+    <string name="info_bass_boost_unsupported">Feature Bass Boost unsupported</string>
+    <string name="switch_3d">3D</string>
+    <string name="info_3D_unsupported">Feature 3D unsupported</string>
+    <string name="switch_presets">Presets</string>
+    <string name="info_custom_unsupported">Feature equalizer customization unsupported</string>
+    <string name="equalizer_general_settings">General Settings</string>
+    <string name="preset_0">Bank 0</string>
+    <string name="preset_1">Bank 1</string>
+    <string name="preset_2">Bank 2</string>
+    <string name="preset_3">Bank 3</string>
+    <string name="preset_4">Bank 4</string>
+    <string name="preset_5">Bank 5</string>
+    <string name="preset_6">Bank 6</string>
+    <string name="button_configure_bank_1">CONFIGURE BANK 1</string>
+
+    <!-- CUSTOM EQUALIZER VIEW -->
+    <string name="action_refresh_equalizer">Refresh values</string>
+    <string name="master_gain_title">Master gain</string>
+    <string name="bands_title">Bands</string>
+    <string name="filter_type_title">Filter type</string>
+    <string name="lpf1_name">LPF1</string>
+    <string name="lpf2_name">LPF2</string>
+    <string name="apf1_name">APF1</string>
+    <string name="apf2_name">APF2</string>
+    <string name="hpf1_name">HPF1</string>
+    <string name="hpf2_name">HPF2</string>
+    <string name="ls1_name">LS1</string>
+    <string name="ls2_name">LS2</string>
+    <string name="tilt1_name">Tilt1</string>
+    <string name="tilt2_name">Titl2</string>
+    <string name="hs1_name">HS1</string>
+    <string name="hs2_name">HS2</string>
+    <string name="peq_name">PEQ</string>
+    <string name="bypass_name">BYPASS</string>
+    <string name="band1_name">band 1</string>
+    <string name="band2_name">band 2</string>
+    <string name="band3_name">band 3</string>
+    <string name="band4_name">band 4</string>
+    <string name="band5_name">band 5</string>
+    <string name="frequency_title">F</string>
+    <string name="gain_title">G</string>
+    <string name="quality_title">Q</string>
+    <string name="dialog_incorrect_state_title">Board incorrect state</string>
+    <string name="dialog_incorrect_state_message">Please stream some music to use this feature.</string>
+
+    <!-- TWS VIEW -->
+    <string name="tws_right_channel">Right channel</string>
+    <string name="tws_left_channel">Left channel</string>
+    <string name="tws_stereo">Stereo</string>
+    <string name="tws_mono">Mono</string>
+    <string name="tws_master">Master speaker</string>
+    <string name="tws_slave">Slave speaker</string>
+
+    <!-- UPDATE VIEW -->
+    <string name="update_error">An error has occurred during the update, please abort it.</string>
+    <string name="update_error_from_board">Error information sent by the board:</string>
+    <string name="update_in_progress">Update in progress</string>
+    <string name="update_abort">Abort</string>
+    <string name="update_complete_title">Update complete</string>
+    <string name="update_complete">The update is complete.</string>
+    <string name="update_vm_command_failed">Failed: the update feature is no more available on the board.</string>
+    <string name="update_error_sync_is_different">The error is: WARN_SYNC_ID_IS_DIFFERENT. By aborting we will restart the update.</string>
+    <string name="update_error_vm_connection_failed">Fail to start the update connection to the board, please abort and try again.</string>
+    <string name="update_alert_transfer_complete">Would you like to proceed?</string>
+    <string name="update_alert_transfer_complete_title">File transfer complete</string>
+    <string name="update_alert_commit">The data has been uploaded on the board and the board is ready for the commit process. Do you want to commit your upload?</string>
+    <string name="update_alert_commit_title">Data commit</string>
+    <string name="update_alert_battery_low">The battery is low on your audio device. Please connect it to a charger.</string>
+    <string name="update_alert_battery_low_title">Battery low</string>
+    <string name="update_alert_erase_sqif">This update will erase the SQIF, do you want to continue?</string>
+    <string name="update_alert_erase_sqif_title">Erase SQIF</string>
+    <string name="update_no_available_file">No update file is available. Add an update file into a \'VMUPGRADE\' folder on your Android device.</string>
+    <string name="update_error_dot">&#8226;</string>
+
+    <!-- TOASTS -->
+    <string name="toast_try_another_device">This device does not work, try another.</string>
+    <string name="toast_connection_failed">The connection failed, maybe the device is not available or already connected somewhere else.</string>
+    <string name="toast_disconnected">Device disconnected</string>
+    <string name="toast_not_implemented">Not implemented yet</string>
+
+    <!-- DIALOGS -->
+    <string name="alert_ok">OK</string>
+    <string name="alert_yes">Yes</string>
+    <string name="alert_no">No</string>
+    <string name="alert_attempt_connection_title">Device disconnected</string>
+    <string name="alert_connection_failed_title">Connection failed</string>
+    <string name="alert_connection_failed_text">We are not able to reconnect to the device, please try again once the device will be ready.</string>
+    <string name="alert_connection_failed_ok">Try again</string>
+    <string name="alert_connection_failed_cancel">Cancel</string>
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2015 Qualcomm Technologies International, Ltd.                                      ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<resources>
+
+    <!-- colors for the devices list -->
+    <color name="device_item_name">@color/primary_text</color>
+    <color name="device_item_address">@color/secondary_text</color>
+    <color name="title">@color/blue_csr</color>
+
+    <!-- colors for the device information list -->
+    <color name="information_item_name">@color/primary_text</color>
+    <color name="information_item_value">@color/secondary_text</color>
+
+    <!-- colors for items -->
+    <color name="button_background">@color/windowBackground</color>
+    <color name="button_text">@color/colorAccent</color>
+    <color name="button_pressed">#AAAAAAAA</color>
+    <color name="switch_background">#DDDDDD</color>
+    <color name="button_disabled_text">@color/material_button_flat_disabled_text</color>
+    <color name="activity_title">@color/white</color>
+    <color name="background_progress_bar">#AAAAAAAA</color>
+    <color name="background_toolbar">@color/colorPrimary</color>
+    <color name="text_tile">@color/white</color>
+    <color name="background_tile_equalizer">@color/material_light_green_500</color>
+    <color name="ripple_tile_equalizer">@color/material_light_green_700</color>
+    <color name="background_tile_led_on">@color/material_amber_600</color>
+    <color name="ripple_tile_led_on">@color/material_amber_800</color>
+    <color name="background_tile_led_off">@color/material_amber_800</color>
+    <color name="ripple_tile_led_off">@color/material_amber_600</color>
+    <color name="background_tile_device">@color/material_red_600</color>
+    <color name="ripple_tile_device">@color/material_red_800</color>
+    <color name="background_tile_tws">@color/material_cyan_500</color>
+    <color name="ripple_tile_tws">@color/material_cyan_700</color>
+    <color name="background_tile_remote">@color/material_indigo_500</color>
+    <color name="ripple_tile_remote">@color/material_indigo_700</color>
+    <color name="background_tile_update">@color/material_deep_purple_500</color>
+    <color name="ripple_tile_update">@color/material_deep_purple_700</color>
+    <color name="button_remote_background">#2B5791</color>
+    <color name="button_remote_background_pressed">#FFA700</color>
+    <color name="button_remote_image">@color/white</color>
+    <color name="switch_info">@color/material_red_900</color>
+    <color name="background_led_disabled">#EEEEEE</color>
+    <color name="image_volume">#65000000</color>
+
+    <!-- THEME COLORS -->
+    <color name="colorPrimary">@color/blue_csr</color>
+    <color name="colorPrimaryDark">@color/dark_blue_csr</color>
+    <color name="windowBackground">@color/white</color>
+    <color name="colorAccent">@color/orange_csr</color>
+
+    <!-- COMPANY COLORS -->
+    <color name="blue_csr">#3A75C4</color>
+    <color name="dark_blue_csr">#2B5791</color>
+    <color name="orange_csr">#FFE55D09</color>
+    <color name="orange_csr2">#66E55D09</color>
+
+    <!-- ANDROID COLORS -->
+    <color name="list_divider">#20000000</color>
+    <color name="white">@android:color/white</color>
+    <color name="primary_text">@android:color/primary_text_light</color>
+    <color name="secondary_text">#90000000</color>
+
+    <!-- GOOGLE MATERIAL COLORS -->
+    <color name="material_button_flat_disabled_text">#42000000</color>
+    <color name="material_light_green_500">#8bc34a</color>
+    <color name="material_light_green_700">#689f38</color>
+    <color name="material_amber_600">#ffb300</color>
+    <color name="material_amber_800">#ff8f00</color>
+    <color name="material_red_600">#e53935</color>
+    <color name="material_red_800">#c62828</color>
+    <color name="material_red_900">#b71c1c</color>
+    <color name="material_cyan_500">#00BCD4</color>
+    <color name="material_cyan_700">#0097a7</color>
+    <color name="material_indigo_500">#3f51b5</color>
+    <color name="material_indigo_700">#303f9f</color>
+    <color name="material_deep_purple_500">#673ab7</color>
+    <color name="material_deep_purple_700">#512da8</color>
+    <color name="material_deep_orange_50">#fbe9e7</color>
+
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2015 Qualcomm Technologies International, Ltd.                                      ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/tile_device"
+    style="@style/AppTheme.Tile.Info" >
+
+    <ImageView
+        android:id="@+id/iv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_info"
+        android:contentDescription="@string/empty_content_description" />
+
+    <ImageView
+        android:id="@+id/iv_battery"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_battery_unknown"
+        android:tint="@color/white"
+        android:contentDescription="@string/empty_content_description" />
+
+    <ImageView
+        android:id="@+id/iv_signal"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/iv_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_signal_unknown"
+        android:contentDescription="@string/empty_content_description" />
+
+    <TextView
+        android:id="@+id/tv_device_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_info"
+        android:layout_above="@id/iv_signal"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_tile_title"
+        android:textColor="@color/text_tile"
+        android:layout_marginStart="@dimen/padding_tiles_inside_half"
+        android:ellipsize="end"
+        android:lines="1" />
+
+    <TextView
+        android:id="@+id/tv_device_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/iv_signal"
+        android:layout_below="@id/tv_device_name"
+        android:gravity="bottom"
+        android:textColor="@color/text_tile"
+        android:layout_marginStart="@dimen/padding_tiles_inside_half"
+        android:layout_marginBottom="@dimen/padding_tiles_inside_half" />
+
+</RelativeLayout>
